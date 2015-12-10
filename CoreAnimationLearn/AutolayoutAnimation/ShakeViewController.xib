@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShakeViewController">
+            <connections>
+                <outlet property="imgIcon" destination="LeU-jd-ixU" id="dAU-jd-Soj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmL-xN-m5r">
+                    <rect key="frame" x="300" y="231" width="50" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ncn-vN-ygm"/>
+                        <constraint firstAttribute="height" constant="50" id="ULk-lq-s0U"/>
+                    </constraints>
+                    <state key="normal" title="停止"/>
+                    <connections>
+                        <action selector="stopBtn:" destination="-1" eventType="touchUpInside" id="Zpg-BI-kX9"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="LeU-jd-ixU">
+                    <rect key="frame" x="250" y="81" width="120" height="120"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="39Z-Bq-gKe"/>
+                        <constraint firstAttribute="height" constant="100" id="mZe-qR-41L"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圣堂刺客" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnU-hm-FbL">
+                    <rect key="frame" x="266" y="50" width="68" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-fQ-vbg">
+                    <rect key="frame" x="250" y="231" width="50" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="SZx-ZK-FUH"/>
+                        <constraint firstAttribute="height" constant="50" id="yJC-27-i9Y"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="beginBtn:" destination="-1" eventType="touchUpInside" id="b9h-jr-tsq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNn-ia-tCI">
+                    <rect key="frame" x="266" y="281" width="68" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Kw2-ej-yh7"/>
+                        <constraint firstAttribute="height" constant="50" id="eSW-k4-7Dx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Transition"/>
+                    <connections>
+                        <action selector="jumpBtn:" destination="-1" eventType="touchUpInside" id="bTa-xg-uHm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-RX-YIl">
+                    <rect key="frame" x="277" y="344" width="43" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="3As-Ha-ybd"/>
+                        <constraint firstAttribute="height" constant="50" id="bjI-9B-mZI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Group"/>
+                    <connections>
+                        <action selector="groupBtn:" destination="-1" eventType="touchUpInside" id="Xt9-Ln-nKm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fnU-hm-FbL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="83Z-G2-zys"/>
+                <constraint firstItem="Ovz-RX-YIl" firstAttribute="top" secondItem="UNn-ia-tCI" secondAttribute="bottom" constant="10" id="9t5-Li-AmC"/>
+                <constraint firstItem="fnU-hm-FbL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="IsA-gt-wYs"/>
+                <constraint firstItem="Ovz-RX-YIl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OZD-i8-1Uu"/>
+                <constraint firstItem="LeU-jd-ixU" firstAttribute="top" secondItem="fnU-hm-FbL" secondAttribute="bottom" constant="10" id="Q4h-oh-Fwr"/>
+                <constraint firstItem="O2N-fQ-vbg" firstAttribute="top" secondItem="LeU-jd-ixU" secondAttribute="top" constant="150" id="XQn-va-fa6"/>
+                <constraint firstItem="O2N-fQ-vbg" firstAttribute="leading" secondItem="LeU-jd-ixU" secondAttribute="leading" id="Xad-eJ-5Gm"/>
+                <constraint firstItem="dmL-xN-m5r" firstAttribute="trailing" secondItem="LeU-jd-ixU" secondAttribute="trailing" id="c1D-NE-aJW"/>
+                <constraint firstItem="LeU-jd-ixU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jaX-mc-Byk"/>
+                <constraint firstItem="dmL-xN-m5r" firstAttribute="top" secondItem="O2N-fQ-vbg" secondAttribute="top" id="m1F-yc-03O"/>
+                <constraint firstItem="UNn-ia-tCI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ty9-Ec-2Oi"/>
+                <constraint firstItem="UNn-ia-tCI" firstAttribute="top" secondItem="LeU-jd-ixU" secondAttribute="bottom" constant="100" id="v0D-Mq-QEG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="5" width="477" height="700"/>
+    </resources>
+</document>
